@@ -42,7 +42,7 @@ try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
 except:
-    UPSTREAM_BRANCH = 'update'
+    UPSTREAM_BRANCH = 'upstream'
 
 if ospath.exists('.git'):
     srun(["rm", "-rf", ".git"])
